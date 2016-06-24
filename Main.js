@@ -81,19 +81,29 @@ class Main extends Component {
           
           <View style={styles.buttonWrap}>
             <TouchableHighlight onPress={ this.navigate.bind(this, 'Cardiac') } style={styles.buttonTopLeftCorner}>
-                <Text style={styles.darkText}>Cardiac</Text>
+                <Image
+                  style={styles.icon}
+                  source={require('./assets/icons/Cardio.png')}
+                />
             </TouchableHighlight>
           </View>
           
           <View style={styles.buttonWrap}>
             <TouchableHighlight onPress={ this.navigate.bind(this, 'Renal') } style={styles.buttonTop}>
+                <Image
+                  style={styles.icon}
+                  source={require('./assets/icons/Renal.png')}
+                />
                 <Text style={styles.darkText}>Renal</Text>
             </TouchableHighlight>
           </View>
           
           <View style={styles.buttonWrap}>
             <TouchableHighlight onPress={ this.navigate.bind(this, 'Neuro') } style={styles.buttonTopRightCorner}>
-                <Text style={styles.darkText}>Neuro</Text>
+                <Image
+                  style={styles.icon}
+                  source={require('./assets/icons/Neuro.png')}
+                />
             </TouchableHighlight>
           </View>
           
@@ -103,7 +113,10 @@ class Main extends Component {
           
           <View style={styles.buttonWrap}>
             <TouchableHighlight onPress={ this.navigate.bind(this, 'HemeONC') } style={styles.buttonLeft}>
-                <Text style={styles.darkText}>Heme-ONC</Text>
+                <Image
+                  style={styles.icon}
+                  source={require('./assets/icons/HemeONC.png')}
+                />
             </TouchableHighlight>
           </View>
           
@@ -115,7 +128,10 @@ class Main extends Component {
           
           <View style={styles.buttonWrap}>
             <TouchableHighlight onPress={ this.navigate.bind(this, 'GIEndo') } style={styles.buttonRight}>
-                <Text style={styles.darkText}>GI/Endo</Text>
+                <Image
+                  style={styles.icon}
+                  source={require('./assets/icons/GIEndo.png')}
+                />
             </TouchableHighlight>
           </View>
           
@@ -125,19 +141,28 @@ class Main extends Component {
           
           <View style={styles.buttonWrap}>
             <TouchableHighlight onPress={ this.navigate.bind(this, 'Pulmonary') } style={styles.buttonBottomLeftCorner}>
-                <Text style={styles.darkText}>Pulmonary</Text>
+                <Image
+                  style={styles.icon}
+                  source={require('./assets/icons/Pulmonary.png')}
+                />
             </TouchableHighlight>
           </View>
           
           <View style={styles.buttonWrap}>
             <TouchableHighlight onPress={ this.navigate.bind(this, 'Converter') } style={styles.buttonBottom}>
-                <Text style={styles.darkText}>Converter</Text>
+                <Image
+                  style={styles.icon}
+                  source={require('./assets/icons/Cardio.png')}
+                />
             </TouchableHighlight>
           </View>
           
           <View style={styles.buttonWrap}>
             <TouchableHighlight onPress={ this.navigate.bind(this, 'Search') } style={styles.buttonBottomRightCorner}>
-                <Text style={styles.darkText}>Search</Text>
+                <Image
+                  style={styles.icon}
+                  source={require('./assets/icons/Cardio.png')}
+                />
             </TouchableHighlight>
           </View>
               
