@@ -34,8 +34,9 @@ var baseColor           = "'rgba(0,159,183,1)'";
 var secondaryColor      = "'rgba(39,39,39,1)'";
 var tertiaryColor       = "'rgba(254,215,102,1)'";
 var light               = "'rgba(239,241,243,1)'";
-var dark                = "'rgba(105,103,115,1)'";
+var dark                = "'rgba(0,54,66,1)'";
 var gray                = "'rgba(39,39,39,0.2)'";
+var blue                = "'rgba(1,139,207,1)'";
 //Dark Set
 var baseTextDark        = "'rgba(0,0,0,1)'";
 var primaryTextDark     = "'rgba(0,0,0,0.87)'";
@@ -76,66 +77,72 @@ class Main extends Component {
     return (
     <View style={styles.wrapper}>
         
-        <View style={styles.headerwrapper}>
-            <View style={styles.headernavigation}>
-                <View style={styles.buttonWrap}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={styles.button}>
-                        <Text>Home</Text>
-                    </TouchableHighlight>
-                </View>
-                <View style={styles.divider}>
-                    
-                </View>
-                <View style={styles.buttonWrap}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={styles.button}>
-                        <Text>Home</Text>
-                    </TouchableHighlight>
-                </View>
-                <View style={styles.divider}>
-                    
-                </View>
-                <View style={styles.buttonWrap}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={styles.button}>
-                        <Text>Home</Text>
-                    </TouchableHighlight>
-                </View>
-            </View>
-        </View>
-      
-        <View style={styles.contentwrapper}>
-      
-            <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={styles.button}>
-                <Text style={styles.welcome}>Home</Text>
+        <View style={styles.navWrap}>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'Cardiac') } style={styles.buttonTopLeftCorner}>
+                <Text style={styles.darkText}>Cardiac</Text>
             </TouchableHighlight>
-        
-        </View>
-
-        <View style={styles.footerwrapper}>
-            <View style={styles.footernavigation}>
-                <View style={styles.buttonWrap}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={styles.buttonbottom}>
-                        <Text>Home</Text>
-                    </TouchableHighlight>
-                </View>
-                <View style={styles.divider}>
-                    
-                </View>
-                <View style={styles.buttonWrap}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={styles.buttonbottom}>
-                        <Text>Home</Text>
-                    </TouchableHighlight>
-                </View>
-                <View style={styles.divider}>
-                    
-                </View>
-                <View style={styles.buttonWrap}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={styles.buttonbottom}>
-                        <Text>Home</Text>
-                    </TouchableHighlight>
-                </View>
-            </View>
+          </View>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'Renal') } style={styles.buttonTop}>
+                <Text style={styles.darkText}>Renal</Text>
+            </TouchableHighlight>
+          </View>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'Neuro') } style={styles.buttonTopRightCorner}>
+                <Text style={styles.darkText}>Neuro</Text>
+            </TouchableHighlight>
+          </View>
+          
         </View>
         
+        <View style={styles.navWrap}>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'HemeONC') } style={styles.buttonLeft}>
+                <Text style={styles.darkText}>Heme-ONC</Text>
+            </TouchableHighlight>
+          </View>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'CodeBlue') } style={styles.buttonBlue}>
+                <Text style={styles.lightText}>CodeBlue</Text>
+            </TouchableHighlight>
+          </View>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'GIEndo') } style={styles.buttonRight}>
+                <Text style={styles.darkText}>GI/Endo</Text>
+            </TouchableHighlight>
+          </View>
+          
+        </View>
+        
+        <View style={styles.navWrap}>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'Pulmonary') } style={styles.buttonBottomLeftCorner}>
+                <Text style={styles.darkText}>Pulmonary</Text>
+            </TouchableHighlight>
+          </View>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'Converter') } style={styles.buttonBottom}>
+                <Text style={styles.darkText}>Converter</Text>
+            </TouchableHighlight>
+          </View>
+          
+          <View style={styles.buttonWrap}>
+            <TouchableHighlight onPress={ this.navigate.bind(this, 'Search') } style={styles.buttonBottomRightCorner}>
+                <Text style={styles.darkText}>Search</Text>
+            </TouchableHighlight>
+          </View>
+              
+        </View>
+      
     </View>
     );
   }
@@ -146,79 +153,122 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  headerwrapper: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: baseColor,
-    width: width,
-    height: headerHeight,
-    borderBottomWidth: 1,
-    borderBottomColor: dividersDark,
-  },
-  divider: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: dividersDark,
-    width: 1,
-    height: divider,
-  },
-  headernavigation: {
-    flexDirection: 'row',
-    alignSelf: 'stretch',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding:10,
-    flexWrap: 'wrap',
-    paddingTop: 0,
-    paddingBottom: 5,
+    backgroundColor: 'rgba(250, 243, 223, 1)',
+    height: height,
     marginTop: 25,
-    width: width
+    padding: 0,
   },
-  contentwrapper: {
-    alignSelf: 'stretch',
-    backgroundColor: '#FFFFFF',
-    height: contentHeight,
-    padding: 10,
-    width: paddedWidth,
-  },
-  footerwrapper: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: gray,
-    width: width,
-    height: footerHeight,
-    borderTopWidth: 1,
-    borderTopColor: dividersDark,
-  },
-  footernavigation: {
+  navWrap: {
     flexDirection: 'row',
     alignSelf: 'stretch',
     justifyContent: 'center',
     alignItems: 'center',
     flexWrap: 'wrap',
+    padding: 0,
+    width: width,
   },
   buttonWrap: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  buttonbottom: {
-    height: 75,
+  buttonBlue: {
+    height: height / 3 - 16,
     alignSelf: 'stretch',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: blue,
+    width: width / 3 - 8,
+    marginHorizontal: 2,
+    marginVertical: 4,
   },
-  welcome: {
-    fontSize: h1,
-    color: primaryTextDark,
-  },
-  button: {
-    height: 50,
+  buttonTopRightCorner: {
+    height: height / 3 - 16,
     alignSelf: 'stretch',
     alignItems: 'center',
     justifyContent: 'center',
+    width: width / 3 - 8,
+    backgroundColor: 'rgba(245, 238, 218, 1)',
+    marginLeft: 2,
+    marginBottom: 4,
+  },
+  buttonTopLeftCorner: {
+    height: height / 3 - 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: width / 3 - 8,
+    backgroundColor: 'rgba(245, 238, 218, 1)',
+    marginRight: 2,
+    marginBottom: 4,
+  },
+  buttonBottomRightCorner: {
+    height: height / 3 - 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: width / 3 - 8,
+    backgroundColor: 'rgba(245, 238, 218, 1)',
+    marginLeft: 2,
+    marginTop: 4,
+  },
+  buttonBottomLeftCorner: {
+    height: height / 3 - 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: width / 3 - 8,
+    backgroundColor: 'rgba(245, 238, 218, 1)',
+    marginRight: 2,
+    marginTop: 4,
+  },
+  buttonTop: {
+    height: height / 3 - 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: width / 3 - 8,
+    backgroundColor: 'rgba(250, 243, 223, 1)',
+    marginHorizontal: 2,
+    marginBottom: 4,
+  },
+  buttonRight: {
+    height: height / 3 - 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: width / 3 - 8,
+    backgroundColor: 'rgba(250, 243, 223, 1)',
+    marginLeft: 2,
+    marginVertical: 4,
+  },
+  buttonBottom: {
+    height: height / 3 - 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: width / 3 - 8,
+    backgroundColor: 'rgba(250, 243, 223, 0.9)',
+    marginHorizontal: 2,
+    marginTop: 4,
+  },
+  buttonLeft: {
+    height: height / 3 - 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: width / 3 - 8,
+    backgroundColor: 'rgba(250, 243, 223, 0.9)',
+    marginRight: 2,
+    marginVertical: 4,
+  },
+  lightText: {
+    color: light,
+    fontSize: h4,
+  },
+  darkText: {
+    color: dark,
+    fontSize: h4,
   },
 });
 
