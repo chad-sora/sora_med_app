@@ -1,6 +1,6 @@
 /**
- * UMB Demo - Damascus Edge - The Forge
- * https://github.com/justchad/geha_blueberry_demo
+ * SORA Med - Damascus Edge - The Forge
+ * https://github.com/relderDE/sora_med_app.git
  * @flow
  */
 
