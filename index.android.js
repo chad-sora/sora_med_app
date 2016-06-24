@@ -1,6 +1,6 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * SORA Med - Damascus Edge - The Forge
+ * https://github.com/relderDE/sora_med_app.git
  * @flow
  */
 
@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-class umbDemo extends Component {
+class soraMed extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -49,4 +49,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('umbDemo', () => umbDemo);
+AppRegistry.registerComponent('soraMed', () => soraMed);
