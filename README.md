@@ -1,2 +1,2 @@
-# sora_med_app
-SORA Med App
+# reactBase
+React Native base build with simple nav and variable styles. To use for any rapid prototyping project.

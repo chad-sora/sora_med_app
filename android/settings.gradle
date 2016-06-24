@@ -1,0 +1,3 @@
+rootProject.name = 'umbDemo'
+
+include ':app'
