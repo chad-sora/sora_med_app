@@ -94,7 +94,6 @@ class Main extends Component {
                   style={styles.icon}
                   source={require('./assets/icons/Renal.png')}
                 />
-                <Text style={styles.darkText}>Renal</Text>
             </TouchableHighlight>
           </View>
           
